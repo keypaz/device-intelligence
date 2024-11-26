@@ -8,9 +8,9 @@
 | -- | --	 			|--------------------------------------------------------------------------|
 | 1  | Android Native  	| [Link](/alpha/README.ANDROID.md)  		     |
 | 2  | IOS Native		| [Link](/alpha/README.IOS.md)  			        |
-| 3  | Flutter			| [Link](README.Flutter.md)  		     |
-| 4  | React Native		| [Link](README.ReactNative.md)  	 |
-| 5  | Web Browser		| [Web Browser](README.Web.md)|                                             |                                                                      |
+| 3  | Flutter			| [Link](/alpha/README.FLUTTER.md) 		     |
+| 4  | React Native		| [Link](/alpha/README.RN.md)  	 |
+| 5  | Web Browser		| [Web Browser](/alpha/README.WEB.md) |                                             |                                                                      |
 
 This sdk will generate META that will be used in the next step. As looked in the chart.
 

@@ -72,11 +72,9 @@ You can get the public key file by downloading it from your fazpass dashboard, t
 Once you have obtained these required files, the easiest way to serve them is to put them in your static folder. Then `init()` method will look like this:
 
 ```js
-// public key is served at https://www.yourdomain.com/files/public-key.txt
-// fazpass service worker is served at https://www.yourdomain.com/sw/my-service-worker.js
 fazpass.init(
-    '/files/public-key.txt',
-    '/sw/fazpass-service-worker.js'
+    '/files/public-key.txt', // If your public key is served at https://www.yourdomain.com/files/public-key.txt
+    '/sw/fazpass-service-worker.js' // If your fazpass service worker is served at https://www.yourdomain.com/sw/my-service-worker.js
 )
 ```
 

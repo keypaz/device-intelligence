@@ -44,8 +44,6 @@ Before using this SDK, make sure to get the public key from Fazpass Dashboard's 
 Then, you have to declare NSFaceIDUsageDescription in your Info.plist file to be able to generate meta, because 
 generating meta requires user to do biometry authentication.
 
-![Xcode add capabilities in target app](xcode_capabilities.jpg)
-
 ## Usage
 
 This package main purpose is to generate meta which you can use to communicate with Fazpass rest API. But

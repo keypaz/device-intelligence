@@ -19,6 +19,13 @@ Whitelist IP is used to secure your API from unauthorized access. You can whitel
 
 ## Endpoint Request Body
 BASE URL IS : https://api.fazpass.com/v2/trusted-device/analyze
+```JSON
+{
+    "pic_id":"085798504000",
+    "merchant_app_id":"{{APP_ID}}",
+    "meta":"{{META_IOS_8}}"
+}
+```
 
 # What We Server
 ```JSON
@@ -28,6 +35,10 @@ BASE URL IS : https://api.fazpass.com/v2/trusted-device/analyze
       "trx_id": "99887d7e-f9e0-48e8-bba0-dc5defe195f9",
       "challenge": "7eeb4053-a862-444b-8807-daca6a14fc6b",
       "fazpass_id": "180b774893da520648f4b3204da464555b0c6bc6ead7e205",
+      "confidence": {
+                    "score": 170,
+                    "level": "LOW"
+                },
       "is_active": false,
       "time_stamp": 1732615823,
       "platform": "ios",

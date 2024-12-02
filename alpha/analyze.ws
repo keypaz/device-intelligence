@@ -2,7 +2,7 @@
 participant SDK as sdk
 entity       Application       as app
 entity    "Merchant Server"    as server
-entity     Fazpass     as f
+entity     Keypaz     as f
 
 sdk --> app : Implementation
 app -> sdk : Request Meta

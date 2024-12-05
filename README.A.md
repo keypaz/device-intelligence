@@ -93,7 +93,7 @@ BASE URL IS : https://api.fazpass.com/v2/trusted-device/analyze
     }
   },
   "sim_information": {
-    "data": null
+    "data": []
   },
   "biometric": {
     "data": {

@@ -96,7 +96,7 @@ BASE URL IS : https://api.keypaz.com/analyze
     }
   },
   "sim_information": {
-    "data": null
+    "data": []
   },
   "biometric": {
     "data": {

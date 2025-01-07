@@ -9,71 +9,20 @@ Maximum: Android 34
 
 # Installation
 
-## 1. Add Jitpack auth token in your gradle properties (*project*/gradle.properties)
-
-```properties
-# Project-wide Gradle settings.
-# ...
-
-# Add this at the bottom
-fazpassAuthToken={{AUTH_TOKEN}}
-```
-
-## 2. Add Jitpack repo in your gradle repositories
-
-If your gradle use buildscript syntax, add Jitpack repo in your root-level build.gradle (*project*/build.gradle):
-```gradle
-buildscript {
-	//...
-}
-
-allprojects {
-	repositories {
-		// Another repo...
-
-	        maven { 
-	            url 'https://jitpack.io'
-	            credentials { username fazpassAuthToken }
-	        }
-	}
-}
-```
-If your gradle use plugin syntax, add Jitpack repo in your settings.gradle (*project*/settings.gradle):
-```gradle
-pluginManagement {
-    repositories {
-        // Another repo...
-    }
-}
-
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        // Another repo...
-
-        maven { 
-            url 'https://jitpack.io'
-            credentials { username fazpassAuthToken }
-        }
-    }
-}
-```
-
-## 3. Add the dependency in your app-level build.gradle (*project*/app/build.gradle)
+## Add the dependency in your app-level build.gradle (*project*/app/build.gradle)
 
 ```gradle
 dependencies {
 	// Another dependencies...
-	implementation 'com.github.fazpass-sdk:android-trusted-device-v2:Tag'
+	implementation 'com.keypaz:device-intelligence-android:1.0.0'
 }
 ```
 
 ### Version tag
 
-| Version 	| Tag 			| Release Date 	|
-| -- 		| --	 		| --		|
-| 2.1 (latest) 	| bengal-v2  		| Nov 5   	|
-| 2.0	 	| bengal-v1  		| Nov 1   	|
+| Version 		|  Release Date 	|
+| -- 			| --	 		|
+| 1.0.0 (latest) 	| Nov 5   	|
 
 ## 4. Sync project with gradle files
 
@@ -110,6 +59,7 @@ If it's different, make sure to update the signature value of your merchant app.
 
 This package main purpose is to generate meta which you can use to communicate with Fazpass rest API. But
 before calling generate meta method, you have to initialize it first by calling this method:
+
 ```kotlin
 // get fazpass instance
 val fazpass = FazpassFactory.getInstance()
@@ -117,8 +67,7 @@ val fazpass = FazpassFactory.getInstance()
 fazpass.init(this, "YOUR_PUBLIC_KEY_ASSET_NAME")
 ```
 
-Call `generateMeta()` method to automatically launch local authentication (biometric / password) and meta will be generated if authentication is success. 
-Otherwise `BiometricAuthError` exception will occurs.
+Call `meta().generate()` method to generate meta.
 
 > [!CAUTION]
 > You have to call generate meta method using `FragmentActivity` OR `AppCompatActivity` as context.
@@ -134,24 +83,12 @@ class Activity : FragmentActivity() {
 	// your activity fields & methods...
 
 	fun generateMeta() {
-		fazpass.generateMeta(
-      this@Activity,
-      accountIndex = -1, 
-      biometricAuth = true // set to false if you don't want to popup biometric
-    ) { meta, exception ->
-		    when (exception) {
-		        is BiometricAuthError -> TODO()
-		        is BiometricUnavailableError -> TODO()
-		        is BiometricNoneEnrolledError -> TODO()
-		        is BiometricSecurityUpdateRequiredError -> TODO()
-		        is BiometricUnsupportedError -> TODO()
-		        is EncryptionException -> TODO()
-		        is PublicKeyNotExistException -> TODO()
-		        is UninitializedException -> TODO()
-		        null -> { 
-		            print(meta) 
-		        }
-		    }
+		fazpass.meta().generate { meta, exception ->
+		    if (exception != null) {
+				TODO()
+				return
+			}
+			println(meta)
 		}
 	}
 }

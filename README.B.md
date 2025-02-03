@@ -151,6 +151,7 @@ BASE URL IS : https://api.keypaz.com/analyze
       }
     }
   },
+// This feature only active on pro only
   "pro_feature":{
         "data":{
             "lock_device":{

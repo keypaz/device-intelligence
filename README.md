@@ -1,4 +1,4 @@
 ![Logo](keypaz.jpg)
 # Documentation Menu
-- [📖 Dokumentasi Versi Alpha](README.A.md)
-- [📖 Dokumentasi Versi Beta](README.B.md)
+- [📖 Type I](README.A.md)
+- [📖 Type II](README.B.md)

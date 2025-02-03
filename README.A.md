@@ -151,31 +151,7 @@ BASE URL IS : https://api.fazpass.com/v2/trusted-device/analyze
         "type": "Corporate",
         "usage": "business"
       }
-    }
-  },
-  // This feature only active on professional & enterprise only
-  "rule_summary": {
-    "data": {
-      "total_rules_owned": 5,
-      "rules_triggered": [
-        {
-          "rule_name": "rule_default",
-          "status": true,
-          "severity_level": "normal",
-          "action": "allow",
-          "reason": "device is trusted and meets all security requirements."
-        },
-        {
-          "rule_name": "rule_otp_spamming",
-          "status": false,
-          "severity_level": "critical",
-          "action": "block",
-          "reason": "otp spamming detected"
-        }
-      ],
-      "total_rules_triggered": 2
-    }
-  }
+    } 
 }
 ```
 ## Key Descriptions

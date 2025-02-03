@@ -65,11 +65,6 @@ BASE URL IS : https://api.keypaz.com/analyze
       "result": false
     }
   },
-  "tempering": {
-    "data": {
-      "result": false
-    }
-  },
   "clonning": {
     "data": {
       "result": false
@@ -156,7 +151,19 @@ BASE URL IS : https://api.keypaz.com/analyze
       }
     }
   },
-  // This feature only active on professional & enterprise only
+  "pro_feature":{
+        "data":{
+            "lock_device":{
+                "status": true,
+                "confidence_rate": 0.98,
+            },
+            "tampering_device": {
+                "status": false,
+                "confidence_rate": 0.96,
+            },
+        }
+   }
+  // This feature only active on enterprise only
   "rule_summary": {
     "data": {
       "total_rules_owned": 5,

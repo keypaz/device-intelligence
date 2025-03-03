@@ -28,15 +28,35 @@ Before using this SDK, make sure to get the merchant key from Keypaz Dashboard.
 
 Before analyzing, you have to initialize the sdk once.
 
+<details>
+<summary>Kotlin</summary>
+ 
 ```kotlin
-// get fazpass instance
+// get keypaz instance
 val keypaz = KeypazFactory.getInstance()
 
-keypaz.init(this, "YOUR_MERCHANT_KEY")
+keypaz.initialize(this, "YOUR_MERCHANT_KEY")
 ```
+ 
+</details>
+
+<details>
+<summary>Java</summary>
+
+```java
+// get keypaz instance
+Keypaz keypaz = KeypazFactory.getInstance();
+
+keypaz.initialize(this, "YOUR_MERCHANT_KEY");
+```
+ 
+</details>
 
 Then call the analyze method like this.
 
+<details>
+<summary>Kotlin</summary>
+ 
 ```kotlin
 keypaz.setup(this).analyze { result ->
   if (result.hasException) {
@@ -49,6 +69,28 @@ keypaz.setup(this).analyze { result ->
   val activityId = result.activityId
 }
 ```
+ 
+</details>
+
+<details>
+<summary>Java</summary>
+
+```java
+keypaz.setup(this).analyze(result -> {
+	if (result.getHasException()) {
+		KeypazException exception = result.getException();
+		// handle error here
+		return null;
+	}
+
+	// your activity id
+	String activityId = result.getActivityId();
+
+	return null;
+});
+```
+ 
+</details>
 
 > [!CAUTION]
 > You have to call analyze method using `FragmentActivity` OR `AppCompatActivity` as context.

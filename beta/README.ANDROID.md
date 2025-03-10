@@ -5,7 +5,7 @@ Visit [official website](https://keypaz.com) for more information about the prod
 # Android OS
 
 Minimum: Android 21
-Maximum: Android 34
+Maximum: Android 35
 
 # Installation
 
@@ -14,7 +14,7 @@ Maximum: Android 34
 ```gradle
 dependencies {
 	// Another dependencies...
-	implementation 'com.keypaz:device-intelligence-android:1.0.2-alpha.1'
+	implementation 'com.keypaz:device-intelligence-android:1.0.2-alpha.4'
 }
 ```
 
@@ -35,7 +35,7 @@ Before analyzing, you have to initialize the sdk once.
 // get keypaz instance
 val keypaz = KeypazFactory.getInstance()
 
-keypaz.initialize(this, "YOUR_MERCHANT_KEY")
+keypaz.initialize(this, "YOUR_MERCHANT_KEY", "YOUR_MERCHANT_APP_ID")
 ```
  
 </details>
@@ -47,7 +47,7 @@ keypaz.initialize(this, "YOUR_MERCHANT_KEY")
 // get keypaz instance
 Keypaz keypaz = KeypazFactory.getInstance();
 
-keypaz.initialize(this, "YOUR_MERCHANT_KEY");
+keypaz.initialize(this, "YOUR_MERCHANT_KEY", "YOUR_MERCHANT_APP_ID");
 ```
  
 </details>

@@ -14,7 +14,7 @@ Maximum: Android 35
 ```gradle
 dependencies {
 	// Another dependencies...
-	implementation 'com.keypaz:device-intelligence-android:1.0.2-alpha.4'
+	implementation 'com.keypaz:device-intelligence-android:1.0.3'
 }
 ```
 

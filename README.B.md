@@ -10,11 +10,11 @@
 
 | No | Stack Technology | Link 		                                                                  |
 | -- | --	 			|--------------------------------------------------------------------------|
-| 1  | Android Native  	| [Link](/alpha/README.ANDROID.md)  		     |
-| 2  | IOS Native		| [Link](/alpha/README.IOS.md)  			        |
-| 3  | Flutter			| [Link](/alpha/README.FLUTTER.md) 		     |
-| 4  | React Native		| [Link](/alpha/README.RN.md)  	 |
-| 5  | Web Browser		| [Web Browser](/alpha/README.WEB.md) |   
+| 1  | Android Native  	| [Link](/beta/README.ANDROID.md)  		     |
+| 2  | IOS Native		| [Link](/beta/README.IOS.md)  			        |
+| 3  | Flutter			| [Link](/beta/README.FLUTTER.md) 		     |
+| 4  | React Native		| [Link](/beta/README.RN.md)  	 |
+| 5  | Web Browser		| [Web Browser](/beta/README.WEB.md) |   
 
 This sdk will generate TRX ID that will be used to get detail information.
 

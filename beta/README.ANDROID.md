@@ -4,8 +4,9 @@ Visit [official website](https://keypaz.com) for more information about the prod
 
 # Android OS
 
-Minimum: Android 21
-Maximum: Android 35
+- Android
+  - Minimum: Android 21
+  - Maximum: Android 35
 
 # Installation
 

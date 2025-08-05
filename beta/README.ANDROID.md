@@ -2,11 +2,11 @@
 
 Visit [official website](https://keypaz.com) for more information about the product.
 
-# Android OS
+# OS Version
 
 - Android
-  - Minimum: Android 21
-  - Maximum: Android 35
+  - Minimum: 21
+  - Maximum: 35
 
 # Installation
 

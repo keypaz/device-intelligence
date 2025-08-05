@@ -2,9 +2,10 @@
 
 Visit [official website](https://keypaz.com) for more information about the product.
 
-# iOS OS
+# OS Version
 
-Minimum: iOS 14
+- iOS
+  - Minimum: 14.0
 
 # Installation
 

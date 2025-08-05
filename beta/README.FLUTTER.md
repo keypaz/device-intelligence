@@ -15,7 +15,7 @@ Visit [official website](https://keypaz.com) for more information about the prod
 
 Run this command in your root project:
 
-`$ flutter pub add fia`
+`$ flutter pub add device_intelligence_flutter`
 
 This will add a line like this to your package's pubspec.yaml (and run an implicit flutter pub get):
 
@@ -29,7 +29,7 @@ Alternatively, your editor might support flutter pub get. Check the docs for you
 Now in your Dart code, you can use:
 
 ```dart
-import 'package:fia/fia.dart';
+import 'package:device_intelligence_flutter/device_intelligence_flutter.dart';
 ```
 
 # Getting Started

@@ -2,10 +2,14 @@
 
 Visit [official website](https://keypaz.com) for more information about the product.
 
-# Android OS
+# Device OS
 
-Minimum: Android 24
-Maximum: Android 35
+- Android
+  - Minimum: Android 24
+  - Maximum: Android 35
+
+- iOS
+  - Minimum: 14.0
 
 # Installation
 

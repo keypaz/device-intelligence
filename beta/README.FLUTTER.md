@@ -2,11 +2,11 @@
 
 Visit [official website](https://keypaz.com) for more information about the product.
 
-# Device OS
+# OS Version
 
 - Android
-  - Minimum: Android 24
-  - Maximum: Android 35
+  - Minimum: 24
+  - Maximum: 35
 
 - iOS
   - Minimum: 14.0

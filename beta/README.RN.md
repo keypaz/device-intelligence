@@ -29,12 +29,12 @@ Before analyzing, you have to initialize the sdk once.
 <summary>Typescript</summary>
  
 ```typescript
-import KeypazFactory from 'device-intelligence-react';
+import KeypazFactory from 'device-intelligence-react'
 
 // get keypaz instance
-let keypaz = KeypazFactory.getInstance();
+let keypaz = KeypazFactory.getInstance()
 
-keypaz.initialize("YOUR_MERCHANT_KEY", "YOUR_MERCHANT_APP_ID");
+keypaz.initialize("YOUR_MERCHANT_KEY", "YOUR_MERCHANT_APP_ID")
 ```
  
 </details>
@@ -45,6 +45,8 @@ Then call the analyze method like this.
 <summary>Typescript</summary>
  
 ```typescript
+import {AnalyzeResult, KeypazError} from 'device-intelligence-react'
+
 let result: AnalyzeResult | undefined
 try {
   result = await keypaz.setup().analyze()

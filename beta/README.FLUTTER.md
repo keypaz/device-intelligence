@@ -26,12 +26,6 @@ dependencies:
 
 Alternatively, your editor might support flutter pub get. Check the docs for your editor to learn more.
 
-Now in your Dart code, you can use:
-
-```dart
-import 'package:device_intelligence_flutter/device_intelligence_flutter.dart';
-```
-
 # Getting Started
 
 Before using this SDK, make sure to get the merchant key and Merchant App ID from Keypaz Dashboard.
@@ -44,6 +38,8 @@ Before analyzing, you have to initialize the sdk once.
 <summary>Dart</summary>
  
 ```dart
+import 'package:device_intelligence_flutter/device_intelligence_flutter.dart';
+
 // get keypaz instance
 final keypaz = KeypazFactory.getInstance();
 
